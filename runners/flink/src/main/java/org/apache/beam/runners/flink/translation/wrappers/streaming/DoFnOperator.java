@@ -94,6 +94,9 @@ import org.apache.flink.streaming.api.operators.AbstractStreamOperator;
 import org.apache.flink.streaming.api.operators.ChainingStrategy;
 import org.apache.flink.streaming.api.operators.HeapInternalTimerService;
 import org.apache.flink.streaming.api.operators.InternalTimer;
+import org.apache.flink.streaming.api.operators.InternalTimerServiceSerializationProxy;
+import org.apache.flink.streaming.api.operators.InternalTimersSnapshot;
+import org.apache.flink.streaming.api.operators.InternalTimersSnapshotReaderWriters;
 import org.apache.flink.streaming.api.operators.OneInputStreamOperator;
 import org.apache.flink.streaming.api.operators.Output;
 import org.apache.flink.streaming.api.operators.Triggerable;
@@ -715,7 +718,10 @@ public class DoFnOperator<InputT, OutputT>
           // We can't get all timerServices, so we just snapshot our timerService
           // Maybe this is a normal DoFn that has no timerService
           if (keyCoder != null) {
-            timerService.snapshotTimersForKeyGroup(dov, keyGroupIdx);
+            InternalTimersSnapshotReaderWriters
+                    .getWriterForVersion(InternalTimerServiceSerializationProxy.VERSION,
+                      timerService.snapshotTimersForKeyGroup(keyGroupIdx))
+                    .writeTimersSnapshot(dov);
           }
 
         }
@@ -771,7 +777,10 @@ public class DoFnOperator<InputT, OutputT>
                 new CoderTypeSerializer<>(timerCoder), this);
             timerService = localService;
           }
-          timerService.restoreTimersForKeyGroup(div, keyGroupIdx, getUserCodeClassloader());
+          InternalTimersSnapshot<Object, Object> tmsSnapshot = InternalTimersSnapshotReaderWriters
+                  .getReaderForVersion(InternalTimerServiceSerializationProxy.VERSION,
+                          getUserCodeClassloader()).readTimersSnapshot(div);
+          timerService.restoreTimersForKeyGroup(tmsSnapshot, keyGroupIdx);
         }
       }
     }
