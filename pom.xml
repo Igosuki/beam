@@ -385,131 +385,131 @@
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-model-pipeline</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-model-job-management</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-model-fn-execution</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-model-fn-execution</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <type>test-jar</type>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-core</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-extensions-join-library</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-extensions-protobuf</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-extensions-google-cloud-platform-core</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-extensions-google-cloud-platform-core</artifactId>
         <classifier>tests</classifier>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-extensions-sketching</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-extensions-sorter</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-fn-execution</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-fn-execution</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <type>test-jar</type>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-harness</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-common</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-common</artifactId>
         <classifier>tests</classifier>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-amazon-web-services</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-amqp</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-cassandra</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-elasticsearch</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-elasticsearch-tests-common</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <scope>test</scope>
         <classifier>tests</classifier>
       </dependency>
@@ -517,191 +517,191 @@
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-elasticsearch-tests-2</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <scope>test</scope>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-elasticsearch-tests-5</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <scope>test</scope>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-google-cloud-platform</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-google-cloud-platform</artifactId>
         <classifier>tests</classifier>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-hadoop-common</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-hadoop-file-system</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-hbase</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-hcatalog</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-jdbc</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-jms</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-kafka</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-kinesis</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-mongodb</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-mqtt</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-solr</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-io-hadoop-input-format</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-core-construction-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-core-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-core-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <type>test-jar</type>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-java-fn-execution</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-reference-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-reference-job-orchestrator</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-local-artifact-service-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-local-java-core</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-direct-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-google-cloud-dataflow-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-spark</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-flink_2.11</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-apex</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-gearpump</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-examples-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
       </dependency>
 
       <dependency>
@@ -1290,7 +1290,7 @@
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-sdks-java-core</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
@@ -1298,7 +1298,7 @@
       <dependency>
         <groupId>org.apache.beam</groupId>
         <artifactId>beam-runners-core-java</artifactId>
-        <version>${project.version}</version>
+        <version>2.3.0</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
@@ -1414,7 +1414,7 @@
             <dependency>
               <groupId>org.apache.beam</groupId>
               <artifactId>beam-sdks-java-build-tools</artifactId>
-              <version>${project.version}</version>
+              <version>2.3.0</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -1553,8 +1553,8 @@
             <!-- exclude this auto-generated packages from javadoc -->
             <excludePackageNames>org.apache.beam.sdk.extensions.sql.impl.parser.impl</excludePackageNames>
             <additionalparam>${beam.javadoc_opts}</additionalparam>
-            <windowtitle>Apache Beam SDK for Java, version ${project.version} API</windowtitle>
-            <doctitle>Apache Beam SDK for Java, version ${project.version}</doctitle>
+            <windowtitle>Apache Beam SDK for Java, version 2.3.0 API</windowtitle>
+            <doctitle>Apache Beam SDK for Java, version 2.3.0</doctitle>
             <use>false</use>
             <quiet>true</quiet>
             <notimestamp>true</notimestamp>
@@ -1830,7 +1830,7 @@
             <execution>
               <id>source-release-assembly</id>
               <configuration>
-                <finalName>apache-beam-${project.version}</finalName>
+                <finalName>apache-beam-2.3.0</finalName>
                 <descriptors>
                   <descriptor>assembly.xml</descriptor>
                 </descriptors>
@@ -1847,7 +1847,7 @@
             <dependency>
               <groupId>org.apache.beam</groupId>
               <artifactId>beam-sdks-java-build-tools</artifactId>
-              <version>${project.version}</version>
+              <version>2.3.0</version>
             </dependency>
 
             <!-- Explicitly exclude deps which we do not really need. -->

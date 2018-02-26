@@ -18,6 +18,10 @@
 
 import groovy.json.JsonOutput
 
+
+apply plugin: 'maven-publish'
+project.version = "2.3.0-p"
+
 apply from: project(":").file("build_rules.gradle")
 applyJavaNature()
 
@@ -46,7 +50,7 @@ configurations {
   validatesRunner
 }
 
-def flink_version = "1.4.0"
+def flink_version = "1.4.1"
 
 dependencies {
   compile library.java.guava
