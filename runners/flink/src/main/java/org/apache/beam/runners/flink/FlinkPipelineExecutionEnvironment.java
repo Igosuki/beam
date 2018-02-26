@@ -26,9 +26,11 @@ import org.apache.beam.sdk.Pipeline;
 import org.apache.flink.api.common.JobExecutionResult;
 import org.apache.flink.api.java.CollectionEnvironment;
 import org.apache.flink.api.java.ExecutionEnvironment;
+import org.apache.flink.configuration.AkkaOptions;
 import org.apache.flink.runtime.state.AbstractStateBackend;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.environment.CheckpointConfig.ExternalizedCheckpointCleanup;
+import org.apache.flink.streaming.api.environment.RemoteStreamEnvironment;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -198,6 +200,12 @@ class FlinkPipelineExecutionEnvironment {
       List<String> stagingFiles = options.getFilesToStage();
       flinkStreamEnv = StreamExecutionEnvironment.createRemoteEnvironment(parts[0],
           Integer.parseInt(parts[1]), stagingFiles.toArray(new String[stagingFiles.size()]));
+      RemoteStreamEnvironment remoteStreamEnv = (RemoteStreamEnvironment) flinkStreamEnv;
+
+      String frameSize = options.getFrameSize();
+      if (frameSize != null) {
+        remoteStreamEnv.getClientConfiguration().setString(AkkaOptions.FRAMESIZE, frameSize);
+      }
     } else {
       LOG.warn("Unrecognized Flink Master URL {}. Defaulting to [auto].", masterUrl);
       flinkStreamEnv = StreamExecutionEnvironment.getExecutionEnvironment();

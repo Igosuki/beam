@@ -149,4 +149,9 @@ public interface FlinkPipelineOptions
   @Default.Boolean(false)
   Boolean isShutdownSourcesOnFinalWatermark();
   void setShutdownSourcesOnFinalWatermark(Boolean shutdownOnFinalWatermark);
+
+  @Description("The maximum frame size used by the remote environment client, "
+          + "allows submitting large jar files.")
+  String getFrameSize();
+  void setFrameSize(String frameSize);
 }
