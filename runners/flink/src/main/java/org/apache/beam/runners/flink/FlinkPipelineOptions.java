@@ -137,4 +137,8 @@ public interface FlinkPipelineOptions
   Long getMaxBundleTimeMills();
   void setMaxBundleTimeMills(Long time);
 
+  @Description("The maximum frame size used by the remote environment client, "
+      + "allows submitting large jar files.")
+  String getFrameSize();
+  void setFrameSize(String frameSize);
 }
