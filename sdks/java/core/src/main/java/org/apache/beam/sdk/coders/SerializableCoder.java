@@ -121,14 +121,10 @@ public class SerializableCoder<T extends Serializable> extends CustomCoder<T> {
 
   @Override
   public void encode(T value, OutputStream outStream)
-      throws IOException, CoderException {
-    try {
-      ObjectOutputStream oos = new ObjectOutputStream(outStream);
-      oos.writeObject(value);
-      oos.flush();
-    } catch (IOException exn) {
-      throw new CoderException("unable to serialize record " + value, exn);
-    }
+      throws IOException {
+    ObjectOutputStream oos = new ObjectOutputStream(outStream);
+    oos.writeObject(value);
+    oos.flush();
   }
 
   @Override
